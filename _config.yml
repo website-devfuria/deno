@@ -1,0 +1,12 @@
+enable_analytics: false
+highlighter: rouge
+permalink: pretty
+
+dominio: devfuria.com.br
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "artigo"
