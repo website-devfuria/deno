@@ -1,7 +1,7 @@
 ---
 layout:      secao
 title:       Deno
-description: Uma nova runtima para JavaScript
+description: Uma nova runtime para JavaScript
 ---
 
 
