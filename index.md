@@ -4,7 +4,6 @@ title:       Deno
 description: Uma nova runtime para JavaScript
 ---
 
-
 O Deno é um novo runtime segura para JavaScript e TypeScript.
 
 O lançamento da sua versão 1.0 está chamando bastante atenção das comunidades de tecnologia no mundo.
@@ -17,6 +16,57 @@ Será que ele substituirá o Nodejs ?
 
 Quais são suas diferenças e propostas ?
 
+
+### Instalando o Deno no Linux
+
+    curl -fsSL https://deno.land/x/install/install.sh | sh
+
+Teste executando `deno`, deve abir o REPL.
+
+Ainda no terminal, execute o comando abaixo.
+
+    deno run https://deno.land/std/examples/welcome.ts
+    Welcome to Deno 🦕
+
+Por curiosidade, acesse https://deno.land/std/examples/welcome.ts
+
+    console.log("Welcome to Deno 🦕");
+
+### Hello world com Deno
+
+Eu peguei o trecho abaixo, coloquei em um arquivo e excutei.
+
+    import { serve } from "https://deno.land/std@0.53.0/http/server.ts";
+    const s = serve({ port: 8000 });
+    console.log("http://localhost:8000/");
+    for await (const req of s) {
+        req.respond({ body: "Hello World\n" });
+    }
+
+O arquivo chama-se `01-basic.js` (você pode encontrá-lo [aqui](exemplos/01-basico.js))
+
+Eu executei dessa forma `deno run 01-basic.js`, ele começa a fazer dowload dos pacotes...
+
+    Download https://deno.land/std@0.53.0/http/server.ts
+    Download https://deno.land/std@0.53.0/encoding/utf8.ts
+    Download https://deno.land/std@0.53.0/io/bufio.ts
+    Download https://deno.land/std@0.53.0/testing/asserts.ts
+    Download https://deno.land/std@0.53.0/async/mod.ts
+    ...
+    ...
+    error: Uncaught PermissionDenied: network access to "0.0.0.0:8000", run again with the --allow-net flag
+
+No final ele aprensentou um erro. Deno é seguro, certo ?
+
+    deno run --allow-net 01-basic.js
+
+...e voialá, basta acessar http://localhost:8000/
+
+
+Observação, os comando abaixo não fucionaram. Precisa ser como mostrado acima.
+
+    deno --allow-net run 01-basic.js
+    deno run 01-basic.js --allow-net flag
 
 
 
