@@ -43,7 +43,7 @@ Eu peguei o trecho abaixo, coloquei em um arquivo e excutei.
         req.respond({ body: "Hello World\n" });
     }
 
-O arquivo chama-se `01-basic.js` (você pode encontrá-lo [aqui](exemplos/01-basico.js))
+O arquivo chama-se `01-basic.js` (você pode encontrá-lo [aqui](exemplos/01-basic.js))
 
 Eu executei dessa forma `deno run 01-basic.js`, ele começa a fazer dowload dos pacotes...
 
