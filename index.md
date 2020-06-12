@@ -16,12 +16,15 @@ Será que ele substituirá o Nodejs ?
 
 Quais são suas diferenças e propostas ?
 
+Ryan Dahl, criador do Node, deu uma palestra em junho de 2018 na JSConf intitulada
+[10 Coisas que eu lamento pelo Node.js](https://www.youtube.com/watch?v=M3BM9TB-8yA)
+(10 Things I Regret About Node.js no original).
 
 ### Instalando o Deno no Linux
 
     curl -fsSL https://deno.land/x/install/install.sh | sh
 
-Teste executando `deno`, deve abir o REPL.
+Teste executando `deno`, deve abrir o REPL.
 
 Ainda no terminal, execute o comando abaixo.
 
@@ -63,7 +66,7 @@ No final ele aprensentou um erro. Deno é seguro, certo ?
 ...e voialá, basta acessar http://localhost:8000/
 
 
-Observação, os comando abaixo não fucionaram. Precisa ser como mostrado acima.
+Observação, os comandos abaixo não fucionaram. Precisa ser como mostrado acima.
 
     deno --allow-net run 01-basic.js
     deno run 01-basic.js --allow-net flag
@@ -78,7 +81,6 @@ Cod3r:
 
 - [DENO 1.0 chegou!! Testando o novo Runtime JavaScript e TypeScript!](https://youtu.be/cvF9fdWYy-4)
 
-
 Progamador BR:
 
 - [Deno - Conheça a Tecnologia que pode acabar com o Node](https://youtu.be/wQ93SqugjTw)
@@ -92,6 +94,10 @@ ez.devs:
 
 - [Criando uma API com Deno](https://youtu.be/aOtN5qdm7jY)
 
+Código Fonte TV:
+
+- [Deno (A alternativa ao Node.js !?)](https://youtu.be/fVoH6rFU6zw)
+- [Construímos uma API Rest com Deno usando TypeScript que vai pra Produção](https://youtu.be/ThDTt_wd2Y4)
 
 
 ## Site Oficial
