@@ -94,6 +94,39 @@ A saída foi...
     /home/flavio/devfuria.com.br/deno
 
 
+### Exemplo de teste uniario
+
+Escrevendo testes unitários com Deno.
+
+Abaixo vemos um exemplo:
+
+    import { assert, equal } from "https://deno.land/std/testing/asserts.ts";
+
+    Deno.test('the whole truth', () => {
+        assert(1 === 1)
+    })
+
+    Deno.test('and nothing but the truth', () => {
+        equal(1, 1)
+    })
+
+O arquivo chama-se `03-test.ts` (você pode encontrá-lo [aqui](exemplos/03-test.ts))
+
+Para executar o teste use `deno test` conforme abaixo.
+
+    deno test ./exemplos/03-test.ts
+
+A saia dos testes é...
+
+    running 2 tests
+    test the whole truth ... ok (7ms)
+    test and nothing but the truth ... ok (2ms)
+
+    test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (9ms)
+
+Veja também [Harry Wollf - Writing tests with Deno](https://youtu.be/z06ggoeNnrk)
+
+
 ### Deno no Youtube
 
 Ordem cronológica...
