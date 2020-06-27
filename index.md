@@ -72,6 +72,25 @@ Observação, os comandos abaixo não fucionaram. Precisa ser como mostrado acim
     deno run 01-basic.js --allow-net flag
 
 
+### Um exemplo de leitura de disco
+
+Neste este eu exploro a leitura em disco.
+
+Precisaremos, ao executar o arquivo, utilizar o parâmetro `--allow-read`.
+
+O código de exemplo é bem simples, possui apenas uma linha.
+
+    console.log( Deno.cwd() )
+
+O arquivo chama-se `02-basic.js` (você pode encontrá-lo [aqui](exemplos/02-basic.js))
+
+    deno run --allow-read ./exemplos/02-basic.ts
+
+A saída foi...
+
+    Compile file:///home/flavio/devfuria.com.br/deno/exemplos/02-basic.ts
+    /home/flavio/devfuria.com.br/deno
+
 
 ### Deno no Youtube
 
