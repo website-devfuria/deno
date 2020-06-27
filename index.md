@@ -74,7 +74,7 @@ Observação, os comandos abaixo não fucionaram. Precisa ser como mostrado acim
 
 ### Um exemplo de leitura de disco
 
-Neste este eu exploro a leitura em disco.
+Neste exemplo eu exploro a leitura em disco.
 
 Precisaremos, ao executar o arquivo, utilizar o parâmetro `--allow-read`.
 
