@@ -80,9 +80,11 @@ Precisaremos, ao executar o arquivo, utilizar o parâmetro `--allow-read`.
 
 O código de exemplo é bem simples, possui apenas uma linha.
 
+Repare que a extensão do arquivo é `ts` (typescript).
+
     console.log( Deno.cwd() )
 
-O arquivo chama-se `02-basic.js` (você pode encontrá-lo [aqui](exemplos/02-basic.js))
+O arquivo chama-se `02-basic.ts` (você pode encontrá-lo [aqui](exemplos/02-basic.ts))
 
     deno run --allow-read ./exemplos/02-basic.ts
 
