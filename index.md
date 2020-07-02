@@ -35,6 +35,26 @@ Por curiosidade, acesse https://deno.land/std/examples/welcome.ts
 
     console.log("Welcome to Deno 🦕");
 
+
+### Instalando no Windows
+
+Abri o powershel e executei..
+
+    iwr https://deno.land/x/install/install.ps1 -useb | iex
+
+Obtive...
+
+    Deno was installed successfully to C:\Users\flavio\.deno\bin\deno.exe
+    Run 'deno --help' to get started
+
+Da mesma forma que no Linux, testei da seguinte forma:
+
+    deno run https://deno.land/std/examples/welcome.ts
+    Welcome to Deno 🦕
+
+Só o símbolo do dinossauro que falhou.
+
+
 ### Hello world com Deno
 
 Eu peguei o trecho abaixo, coloquei em um arquivo e excutei.
