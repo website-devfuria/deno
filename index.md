@@ -60,13 +60,19 @@ Só o símbolo do dinossauro que falhou.
 Eu peguei o trecho abaixo, coloquei em um arquivo e excutei.
 
     import { serve } from "https://deno.land/std@0.53.0/http/server.ts";
+
     const s = serve({ port: 8000 });
+
     console.log("http://localhost:8000/");
+
     for await (const req of s) {
-        req.respond({ body: "Hello World\n" });
+    req.respond({ body: "Hello World\n" });
     }
 
+
 O arquivo chama-se `01-basic.js` (você pode encontrá-lo [aqui](exemplos/01-basic.js))
+
+Talvez você queira fazer o download deste repo [deno-hello-world](https://github.com/flaviomicheletti/deno-hello-world).
 
 Eu executei dessa forma `deno run 01-basic.js`, ele começa a fazer dowload dos pacotes...
 
