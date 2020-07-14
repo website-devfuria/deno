@@ -66,7 +66,7 @@ Eu peguei o trecho abaixo, coloquei em um arquivo e excutei.
     console.log("http://localhost:8000/");
 
     for await (const req of s) {
-    req.respond({ body: "Hello World\n" });
+        req.respond({ body: "Hello World\n" });
     }
 
 
@@ -120,7 +120,7 @@ A saída foi...
     /home/flavio/devfuria.com.br/deno
 
 
-### Exemplo de teste uniario
+### Exemplo de teste unitário
 
 Escrevendo testes unitários com Deno.
 
