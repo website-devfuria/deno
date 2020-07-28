@@ -1,6 +1,6 @@
 ---
-title:       Deno OAK
-description: hellow world
+title:       "OAK o 'express' do Deno"
+description: Este é um exemplo de hellow world
 capitulo:    oak
 ordem:        1
 ---
