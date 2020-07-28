@@ -195,7 +195,7 @@ Se você (assim como eu) vem do mundo Node, deve estar se perguntando:
 
 Ele está aqui [oak](https://oakserver.github.io/oak/)
 
-Veja um hello world de um servidor deno com [oak](https://github.com/flaviomicheletti/deno-oak-getting-started)
+Veja um [hello world](/hellow-world-oak) (artigo + repo) de um servidor Deno com OAK.
 
 
 
