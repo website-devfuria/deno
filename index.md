@@ -20,6 +20,8 @@ Ryan Dahl, criador do Node, deu uma palestra em junho de 2018 na JSConf intitula
 [10 Coisas que eu lamento pelo Node.js](https://www.youtube.com/watch?v=M3BM9TB-8yA)
 (10 Things I Regret About Node.js no original).
 
+
+
 ### Instalando o Deno no Linux
 
     curl -fsSL https://deno.land/x/install/install.sh | sh
@@ -34,6 +36,7 @@ Ainda no terminal, execute o comando abaixo.
 Por curiosidade, acesse https://deno.land/std/examples/welcome.ts
 
     console.log("Welcome to Deno 🦕");
+
 
 
 ### Instalando no Windows
@@ -53,6 +56,19 @@ Da mesma forma que no Linux, testei da seguinte forma:
     Welcome to Deno 🦕
 
 Só o símbolo do dinossauro que falhou.
+
+
+### Terminal iterativo
+
+Você pode executar apenas `deno` ou `deno repl`.
+
+    $ deno repl
+    Deno 1.0.0
+    exit using ctrl+d or close()
+    > console.log("Hello World !")
+    Hello World !
+
+... e sair brincando.
 
 
 ### Hello world com Deno
@@ -91,11 +107,24 @@ No final ele aprensentou um erro. Deno é seguro, certo ?
 
 ...e voialá, basta acessar http://localhost:8000/
 
-
 Observação, os comandos abaixo não fucionaram. Precisa ser como mostrado acima.
 
     deno --allow-net run 01-basic.js
     deno run 01-basic.js --allow-net flag
+
+
+### Executando
+
+Para arganizar o pensamento, mostro abaixo o comando para executar uma aplicação deno:
+
+    deno run <entry-point>
+
+Deno tentará baixar todas as suas depêndencias.
+
+Para forçar a releitura dos módulos, execute o comando abaixo:
+
+    deno run --reload <entry-point>
+
 
 
 ### Um exemplo de leitura de disco
@@ -118,6 +147,7 @@ A saída foi...
 
     Compile file:///home/flavio/devfuria.com.br/deno/exemplos/02-basic.ts
     /home/flavio/devfuria.com.br/deno
+
 
 
 ### Exemplo de teste unitário
@@ -150,7 +180,23 @@ A saia dos testes é...
 
     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (9ms)
 
+
+Veja um repositório de exemplo [testes unitários](hhttps://github.com/flaviomicheletti/deno-unit-test)
+
 Veja também [Harry Wollf - Writing tests with Deno](https://youtu.be/z06ggoeNnrk)
+
+
+
+### Frame workd para deno
+
+Se você (assim como eu) vem do mundo Node, deve estar se perguntando:
+
+"Cadê o 'express' do Deno ?"
+
+Ele está aqui [oak](https://oakserver.github.io/oak/)
+
+Veja um hello world de um servidor deno com [oak](https://github.com/flaviomicheletti/deno-oak-getting-started)
+
 
 
 ### Deno no Youtube
