@@ -181,7 +181,7 @@ A saia dos testes é...
     test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (9ms)
 
 
-Veja um repositório de exemplo [testes unitários](hhttps://github.com/flaviomicheletti/deno-unit-test)
+Veja um repositório de exemplo [testes unitários](https://github.com/flaviomicheletti/deno-unit-test)
 
 Veja também [Harry Wollf - Writing tests with Deno](https://youtu.be/z06ggoeNnrk)
 
