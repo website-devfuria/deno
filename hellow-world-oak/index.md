@@ -18,12 +18,12 @@ Crie um arquivo chamado `server.ts`.
       ctx.response.body = "Hello world!";
     });
 
-    await app.listen("127.0.0.1:8000");
+    await app.listen("127.0.0.1:8080");
 
 
 Execute `deno run --allow-net server.ts`.
 
-Acesse em seu navegador http://localhost:8000/
+Acesse em seu navegador http://localhost:8080/
 
 
 ### Uma segunda vesão
@@ -46,7 +46,7 @@ Abaix, temos uma versão ligeiramente diferente:
 
 ### Este exemplo no GitHub
 
-https://github.com/flaviomicheletti/deno-oak-getting-started
+- [flaviomicheletti/deno-oak-getting-started](https://github.com/flaviomicheletti/deno-oak-getting-started)
 
 
 
@@ -59,10 +59,14 @@ Se apareceu o erro abaixo para você, tente atualizar o Deno.
             sorted: true,
 
             ~~~~~~~~~~~~
-Para atualizar eu executei o mesmo comando da instalação (para Linux):
+
+__Para atualizar__ eu executei o mesmo comando da instalação (para Linux):
 
 
     $ curl -fsSL https://deno.land/x/install/install.sh | sh
+
+Obtive...
+
     ######################################################################## 100,0%##O#- #                                                        ######################################################################## 100,0%
     Archive:  /home/your-user/.deno/bin/deno.zip
       inflating: deno

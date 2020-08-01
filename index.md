@@ -187,7 +187,7 @@ Veja também [Harry Wollf - Writing tests with Deno](https://youtu.be/z06ggoeNnr
 
 
 
-### Frame workd para deno
+### Framework para deno
 
 Se você (assim como eu) vem do mundo Node, deve estar se perguntando:
 
