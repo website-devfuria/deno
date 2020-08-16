@@ -28,7 +28,7 @@ Acesse em seu navegador http://localhost:8080/
 
 ### Uma segunda vesão
 
-Abaix, temos uma versão ligeiramente diferente:
+Abaixo, temos uma versão ligeiramente diferente:
 
     import { Application } from "https://deno.land/x/oak/mod.ts";
 
@@ -71,6 +71,17 @@ Obtive...
     Archive:  /home/your-user/.deno/bin/deno.zip
       inflating: deno
     Deno was installed successfully to /home/you-user/.deno/bin/deno
+
+No __Windows__ eu consegui atualizar executando a linha abaixo no powrshell:
+
+
+    iwr https://deno.land/x/install/install.ps1 -useb | iex
+
+Tenha paciência, pois demorou um bocado.
+
+
+Agora, basta checar sua versão.
+
 
 Minha versão anterior era...
 
