@@ -199,6 +199,16 @@ Veja um [hello world](hellow-world-oak) (artigo + repo) de um servidor Deno com 
 
 
 
+### Suporte no WebStorm (JetBrains)
+
+Os uários da editor WebStorm (na verdade uma IDE) já podem contar com suporte
+ao Deno instalando o [plugin](https://plugins.jetbrains.com/plugin/14382-deno)
+equivalente.
+
+Lei mais no blog da jetbrains [Deno Support in JetBrains IDEs](https://blog.jetbrains.com/webstorm/2020/06/deno-support-in-jetbrains-ides/)
+
+
+
 ### Deno no Youtube
 
 Ordem cronológica...
